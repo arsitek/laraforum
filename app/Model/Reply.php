@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reply extends Model
 {
+    //save all
+    protected $guarded = [];
+
     //balasan adalah milik dari pertanyaan tertentu
     public function question()
     {
