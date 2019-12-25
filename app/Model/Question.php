@@ -36,7 +36,7 @@ class Question extends Model
     }
 
     //Tambakan attribut path
-    public function getPathAtrribute()
+    public function getPathAttribute()
     {
         return asset("api/question/$this->slug");
     }
