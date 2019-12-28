@@ -67,4 +67,10 @@ class User extends Authenticatable implements JWTSubject
     {
         return $this->hasMany(Question::class);
     }
+
+    //Enkripsi password
+    public function setPasswordAttribute($value)
+    {
+        return $this->attributes['password'] = bcrypt($value);
+    }
 }
