@@ -1,1 +1,14 @@
-//
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+
+@import url("https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css");
+
+//import dari folder '/node_modules/vuetify/'
+@import "~vuetify/dist/vuetify.min.css";
+
+//@import url("https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css");
+
+.navbar-laravel {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
