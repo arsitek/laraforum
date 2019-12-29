@@ -1,8 +1,10 @@
 <template>
     <div>
         <toolbar></toolbar>
-        <h1>Tes</h1>
+        <router-view></router-view>
         <app-footer></app-footer>
+
+        
     </div>
 </template>
 

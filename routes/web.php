@@ -11,10 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('beranda');
-});
+use Illuminate\Support\Facades\Route;
 
-Auth::routes();
+Route::view('/', 'beranda');
+Route::view('/{any}', 'beranda');
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('/', function () {
+//     return view('beranda');
+// });
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

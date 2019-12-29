@@ -5,13 +5,16 @@
 
             <v-spacer></v-spacer>
 
-            <v-toolbar-items>
+            <div>
                 <v-btn text>Forum</v-btn>
                 <v-btn text>Ask Question</v-btn>
                 <v-btn text>Category</v-btn>
-                <v-btn text>login</v-btn>
+                <router-link to="/login">
+                    <v-btn text>login</v-btn>
+                </router-link>
+                
 
-            </v-toolbar-items>
+            </div>
 
             <template v-if="$vuetify.breakpoint.smAndUp">
                 <v-btn icon>
